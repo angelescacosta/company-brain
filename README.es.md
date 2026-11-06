@@ -2,7 +2,7 @@
 
 [English](README.md) · **Español**
 
-Asistente de IA privado para una consultora pequeña. Funciona entero en un MacBook Air M4 de 16 GB, sin nube, y responde solo con los documentos de la empresa, citando la fuente de cada dato.
+Asistente de IA privado para una consultora pequeña. La IA funciona entera en un MacBook Air M4 de 16 GB, sin servicios de IA en la nube, y responde solo con los documentos de la empresa, citando la fuente de cada dato.
 
 Proyecto final del bootcamp de **AI Engineering de KeepCoding**. Diapositivas: [español](docs/presentation/company-brain-presentacion-es.pdf) · [inglés](docs/presentation/company-brain-presentation-en.pdf).
 
@@ -10,7 +10,7 @@ Proyecto final del bootcamp de **AI Engineering de KeepCoding**. Diapositivas: [
 
 ## El problema
 
-Una consultora trabaja con transcripciones de llamadas, propuestas, contratos e informes. Son confidenciales, así que no pueden subirse a un servicio en la nube. Company Brain hace tres cosas sin que nada salga del portátil:
+Una consultora trabaja con transcripciones de llamadas, propuestas, contratos e informes. Son confidenciales, así que no pueden pegarse en ChatGPT ni en otros servicios de IA de internet. Los documentos siguen en el Google Drive de la empresa, como antes; Company Brain lee la copia sincronizada en el portátil y hace tres cosas sin enviar ningún documento a una IA externa:
 
 | Modo | Qué hace |
 | --- | --- |
@@ -20,7 +20,7 @@ Una consultora trabaja con transcripciones de llamadas, propuestas, contratos e 
 
 ## Restricciones
 
-- 0 € en nube o APIs: todo local.
+- 0 € extra en IA en la nube o APIs: la IA funciona en local.
 - 16 GB de memoria (MacBook Air M4, el único ordenador disponible).
 - Inglés y español.
 - Pruebas solo con datos ficticios (60 documentos) y públicos (17 documentos).
@@ -72,6 +72,7 @@ El análisis está en [`notebooks/results.ipynb`](notebooks/results.ipynb) (en i
 ## Privacidad y seguridad
 
 - Un cortafuegos por aplicación (LuLu) impide que la IA salga a internet; se comprueba en cada arranque.
+- Los documentos siguen en el Google Drive de la empresa; la IA solo lee la copia que la app de Drive sincroniza en el Mac. Las copias de seguridad van a Drive cifradas con `age`, así que el proveedor no puede leerlas.
 - Copia de seguridad nocturna, cifrada y firmada, con restauración probada.
 - Auditoría de seguridad OWASP (`reports/security_audit.md`).
 - Solo datasets y documentos con licencia que permite uso comercial (`LICENCES.md`).

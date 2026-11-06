@@ -2,7 +2,7 @@
 
 **English** · [Español](README.es.md)
 
-A private AI assistant for a small consultancy. It runs entirely on a 16 GB MacBook Air M4, with no cloud, and answers only from the company's own documents, citing the source of every fact.
+A private AI assistant for a small consultancy. The AI runs entirely on a 16 GB MacBook Air M4, with no cloud AI service, and answers only from the company's own documents, citing the source of every fact.
 
 Final project of the **KeepCoding AI Engineering** bootcamp. Slides: [English](docs/presentation/company-brain-presentation-en.pdf) · [Spanish](docs/presentation/company-brain-presentacion-es.pdf).
 
@@ -10,7 +10,7 @@ Final project of the **KeepCoding AI Engineering** bootcamp. Slides: [English](d
 
 ## The problem
 
-A consultancy works with call transcripts, proposals, contracts and reports. They are confidential, so they cannot be uploaded to a cloud service. Company Brain does three things without anything leaving the laptop:
+A consultancy works with call transcripts, proposals, contracts and reports. They are confidential, so they cannot be pasted into ChatGPT or other online AI services. The documents stay in the company's Google Drive, as before; Company Brain reads the copy synced to the laptop and does three things without sending any document to an outside AI:
 
 | Mode | What it does |
 | --- | --- |
@@ -20,7 +20,7 @@ A consultancy works with call transcripts, proposals, contracts and reports. The
 
 ## Constraints
 
-- €0 for cloud or APIs: everything runs locally.
+- €0 extra for cloud AI or APIs: the AI runs locally.
 - 16 GB of memory (MacBook Air M4, the only computer available).
 - English and Spanish.
 - Tested only with fictional (60 documents) and public (17 documents) data.
@@ -72,6 +72,7 @@ The analysis is in [`notebooks/results.ipynb`](notebooks/results.ipynb) and ever
 ## Privacy and security
 
 - A per-app firewall (LuLu) keeps the AI off the internet; it is checked at every start.
+- Documents stay in the company's Google Drive; the AI only reads the copy the Drive app syncs to the Mac. Backups go to Drive encrypted with `age`, so the storage provider cannot read them.
 - Nightly backup, encrypted and signed, with a tested restore.
 - OWASP security audit (`reports/security_audit.md`).
 - Only datasets and documents whose licence allows commercial use (`LICENCES.md`).
