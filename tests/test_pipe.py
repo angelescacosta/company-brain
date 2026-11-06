@@ -181,3 +181,23 @@ def test_download_links_follow_the_summary() -> None:
     assert reply.endswith(
         "Download: [Word](http://127.0.0.1:8765/download/a) · [PDF](http://127.0.0.1:8765/download/b)"
     )
+
+
+def test_the_first_question_is_answered_once_the_client_is_chosen() -> None:
+    """The question asked before choosing the client is not lost."""
+    pipe, fake = Pipe(), FakeBackend()
+    pipe._call = fake  # type: ignore[method-assign]
+    body = {
+        "model": "company_brain.answer",
+        "messages": [
+            {"role": "user", "content": "What fee did we agree?"},
+            {"role": "assistant", "content": "Which client? Reply with the number or the name:"},
+            {"role": "user", "content": "Pellmore Dental Group"},
+        ],
+    }
+    reply = asyncio.run(pipe.pipe(body, __metadata__={"chat_id": "chat-1"}))
+    assert reply.startswith("This chat is now about Pellmore Dental Group.")
+    assert "What fee did we agree?" in reply and reply.endswith("The fee is EUR 36,500. [1]")
+    path, payload = fake.calls[-1]
+    assert path == "/ask" and payload["message"] == "What fee did we agree?"
+    assert payload["client"] == "fictional:Pellmore Dental Group" and payload["history"] == []

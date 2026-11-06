@@ -103,6 +103,7 @@ class Pipe:
         mode = str(body.get("model", "")).rsplit(".", 1)[-1]
         messages = [m for m in body.get("messages", []) if m.get("role") in ("user", "assistant")]
         message = str(messages[-1].get("content", "")) if messages else ""
+        notice = ""
         try:
             state = await self._call("/chat/state", {"chat_id": chat_id})
             client = state.get("client")
@@ -114,7 +115,14 @@ class Pipe:
                     return f"{WHICH_CLIENT}\n{listing}"
                 await self._call("/chats", {"chat_id": chat_id, "client": chosen})
                 name = next(c["name"] for c in clients if c["scope"] == chosen)
-                return f"This chat is now about {name}. Ask your question."
+                # The chat's first message, if it was a question rather than a client, is
+                # answered now, so it does not have to be typed again.
+                first = [m for m in messages if m["role"] == "user"][0]
+                question = str(first.get("content", ""))
+                if first is messages[-1] or self._choose(question, clients) is not None:
+                    return f"This chat is now about {name}. Ask your question."
+                client, message, messages = chosen, question, [first]
+                notice = f"This chat is now about {name}. Your question was:\n> {question}\n\n"
             history = [
                 {"role": m["role"], "content": str(m.get("content", ""))} for m in messages[:-1]
             ][-6:]
@@ -141,7 +149,7 @@ class Pipe:
                             },
                         }
                     )
-            text = str(reply.get("text", GENERIC))
+            text = notice + str(reply.get("text", GENERIC))
             links = reply.get("downloads") or []
             if links:
                 text += "\n\nDownload: " + " · ".join(f"[{d['label']}]({d['url']})" for d in links)
