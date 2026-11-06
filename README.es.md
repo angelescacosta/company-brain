@@ -67,7 +67,7 @@ Valoración humana a ciegas: 20 respuestas con una media de 4,8 sobre 5 (inglés
 
 Veredicto: **piloto, por debajo del objetivo.** Sirve para borradores que revisa una persona (nunca mostró una cifra sin su fuente ni mezcló clientes), todavía no para usarlo sin revisión. Los puntos débiles son la resistencia a instrucciones trampa, la relevancia (0,70) y la fidelidad de las respuestas en inglés.
 
-El análisis está en [`notebooks/results.ipynb`](notebooks/results.ipynb) (en inglés) y todos los resultados en `reports/eval_runs.csv`.
+El análisis está en [`notebooks/results.ipynb`](notebooks/results.ipynb) (en inglés) y todos los resultados en `reports/eval_runs.csv`. El conjunto de prueba está en Hugging Face: [AHAcosta/company-brain-eval](https://huggingface.co/datasets/AHAcosta/company-brain-eval).
 
 ## Privacidad y seguridad
 

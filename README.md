@@ -67,7 +67,7 @@ Blind human rating: 20 answers scored 4.8 out of 5 on average (English 4.9, Span
 
 Verdict: **pilot, below target.** Safe to use for drafts that a person reviews (it never showed a figure without its source and never mixed clients), not yet for use without review. The weak points are resistance to planted instructions, relevance (0.70), and faithfulness on English answers.
 
-The analysis is in [`notebooks/results.ipynb`](notebooks/results.ipynb) and every result is in `reports/eval_runs.csv`. The test set is on Hugging Face: [USER/DATASET](https://huggingface.co/datasets/USER/DATASET).
+The analysis is in [`notebooks/results.ipynb`](notebooks/results.ipynb) and every result is in `reports/eval_runs.csv`. The test set is on Hugging Face: [AHAcosta/company-brain-eval](https://huggingface.co/datasets/AHAcosta/company-brain-eval).
 
 ## Privacy and security
 
