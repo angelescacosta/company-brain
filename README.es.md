@@ -4,7 +4,7 @@
 
 Asistente de IA privado para una consultora pequeña. Funciona entero en un MacBook Air M4 de 16 GB, sin nube, y responde solo con los documentos de la empresa, citando la fuente de cada dato.
 
-Proyecto final del bootcamp de **AI Engineering de KeepCoding**. Diapositivas: [`docs/presentation/`](docs/presentation/).
+Proyecto final del bootcamp de **AI Engineering de KeepCoding**. Diapositivas: [español](docs/presentation/company-brain-presentacion-es.pdf) · [inglés](docs/presentation/company-brain-presentation-en.pdf).
 
 > Todos los clientes y documentos de este repositorio son **ficticios** o **públicos**. No contiene datos reales de clientes.
 

@@ -4,7 +4,7 @@
 
 A private AI assistant for a small consultancy. It runs entirely on a 16 GB MacBook Air M4, with no cloud, and answers only from the company's own documents, citing the source of every fact.
 
-Final project of the **KeepCoding AI Engineering** bootcamp. Slides: [`docs/presentation/`](docs/presentation/).
+Final project of the **KeepCoding AI Engineering** bootcamp. Slides: [English](docs/presentation/company-brain-presentation-en.pdf) · [Spanish](docs/presentation/company-brain-presentacion-es.pdf).
 
 > Every client and document in this repository is **fictional** or **public**. It holds no real client data.
 
