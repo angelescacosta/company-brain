@@ -268,3 +268,6 @@ When freezing, the active index was the bge-m3 one, not T35's winner (EmbeddingG
 
 ## D44 The locked run was started twice; the first attempt recorded nothing (T38), 2026-11-06
 The first locked run answered and judged the 22 questions, then stopped with an error before writing anything: the row writer refused the "locked" split. No metric, answer or per-question result was shown or saved (only progress lines such as "judged 5 of 15"), and nothing in the system changed between the two attempts apart from that write step. The run was repeated once with the same frozen configuration; the report is from the second attempt. The seal access log shows both reads.
+
+## D45 The source window shows the cited part of the passage (display only), 2026-11-06
+The excerpt sent to the chat's source window was the first 400 characters of the passage, so in the Pellmore contract the fee clause was cut off. It is now 500 characters starting shortly before the first value (three or more digits) that the citing facts quote, matched with any separator (36.500 in a Spanish answer, 36,500 in the source); otherwise the start of the passage as before. Answers, retrieval and the gate's checks are unchanged, so the T38 locked result still stands.

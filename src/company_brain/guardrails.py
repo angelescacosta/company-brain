@@ -38,6 +38,8 @@ NOT_IN_SOURCES = "[not in sources]"
 VALUE_REMOVED = "[value removed]"
 SUGGESTIONS_HEADING = "Suggestions, not agreed"
 CLAIM_FLOOR = 0.5
+EXCERPT = 500  # characters of the passage shown in the source window
+LEAD = 150  # characters kept before the cited value, for context
 UNREADABLE = "The answer could not be checked, so it is not shown. Please ask again."
 
 _NUMBER = r"\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?|\d+(?:[.,]\d+)?"
@@ -160,6 +162,27 @@ def describe_location(span: dict[str, Any]) -> str:
 
 def render_citations(numbers: Iterable[int]) -> str:
     return " ".join(f"[{n}]" for n in numbers)
+
+
+def excerpt(passage: str, fact_texts: Sequence[str], size: int = EXCERPT) -> str:
+    """The part of the passage around the first value its facts quote (an amount, a
+    number with three or more digits), so the source window shows what was cited.
+    Separators may differ (36.500 in a Spanish answer, 36,500 in the source)."""
+    for text in fact_texts:
+        for value in re.findall(_NUMBER, text):
+            digits = re.sub(r"\D", "", value)
+            if len(digits) < 3:
+                continue
+            found = re.search(r"(?<!\d)" + r"[.,\s]?".join(digits) + r"(?!\d)", passage)
+            if found is None:
+                continue
+            start = max(0, found.start() - LEAD)
+            if start:
+                space = passage.find(" ", start)
+                start = space + 1 if 0 <= space < found.start() else start
+            end = start + size
+            return ("…" if start else "") + passage[start:end] + ("…" if end < len(passage) else "")
+    return passage[:size]
 
 
 def parse_citations(text: str) -> list[int]:
@@ -379,7 +402,7 @@ def gate(
             "file": s.hit.rel_path,
             "name": PurePosixPath(s.hit.rel_path).name,
             "location": "; ".join(d for d in (describe_location(x) for x in s.hit.spans[:2]) if d),
-            "excerpt": s.hit.text[:400],
+            "excerpt": excerpt(s.hit.text, [f.text for f in answer.facts if s.number in f.sources]),
         }
         for s in answer.sources
         if s.number in cited_numbers

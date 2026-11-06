@@ -98,3 +98,18 @@ def test_locations_read_plainly() -> None:
     assert g.describe_location({"cue": 9, "start": "00:00:52.000"}) == "at 00:00:52"
     assert g.describe_location({"cell": "Summary!A5:C5"}) == "cells Summary!A5:C5"
     assert g.describe_location({"image": True, "line": 3}) == "image, line 3"
+
+
+def test_source_window_shows_the_cited_value() -> None:
+    """The excerpt starts near the quoted amount, even with other separators in the answer."""
+    passage = "Preamble. " * 80 + "Clause 7. The total fixed fee is EUR 36,500, excluding VAT."
+    shown = g.excerpt(passage, ["La tarifa total fija es de EUR 36.500 [1]."])
+    assert "EUR 36,500" in shown and shown.startswith("…")
+    assert len(shown) <= g.EXCERPT + 2
+
+
+def test_source_window_falls_back_to_the_start() -> None:
+    passage = "Clause 3. The fee is agreed. " + "More text. " * 80
+    assert g.excerpt(passage, ["The fee was agreed on 3 May [1]."]) == passage[: g.EXCERPT]
+    assert g.excerpt("A 136,500 B 36,500", ["EUR 36.500"]).find("36,500") >= 0
+    assert "1365" not in g.excerpt("x" * 600 + "136,500", ["EUR 36.500"])[:5]
