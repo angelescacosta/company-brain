@@ -223,12 +223,19 @@ def draft(request: str, selection: Selection, generate: Generate) -> Draft:
         questions.append(MISSING[language]["duration"])
     asked = guardrails.gate(Answer(request, language, "", questions=questions, sources=sources))
     warnings += asked.warnings
-    question_lines = asked.questions_text.removeprefix("Questions:\n")
+    question_lines = asked.questions_text.removeprefix(
+        guardrails.labels(language)["questions"] + "\n"
+    )
     parts.append(f"## {headings[6]}\n\n{question_lines or '—'}")
     if planted:
-        warnings.append("a passage addressed to the assistant was left out")
+        warnings.append(
+            "se omitió un pasaje dirigido al asistente"
+            if language == "es"
+            else "a passage addressed to the assistant was left out"
+        )
     if warnings:
-        parts.append("Warnings:\n" + "\n".join(f"- {w}" for w in dict.fromkeys(warnings)))
+        heading = guardrails.labels(language)["warnings"]
+        parts.append(heading + "\n" + "\n".join(f"- {w}" for w in dict.fromkeys(warnings)))
     return Draft(
         "\n\n".join(parts),
         facts_text,

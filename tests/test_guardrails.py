@@ -113,3 +113,22 @@ def test_source_window_falls_back_to_the_start() -> None:
     assert g.excerpt(passage, ["The fee was agreed on 3 May [1]."]) == passage[: g.EXCERPT]
     assert g.excerpt("A 136,500 B 36,500", ["EUR 36.500"]).find("36,500") >= 0
     assert "1365" not in g.excerpt("x" * 600 + "136,500", ["EUR 36.500"])[:5]
+
+
+def test_spanish_answers_get_spanish_labels() -> None:
+    """What the gate adds (box heading, value marks, headings, warnings) follows the language."""
+    answer = Answer(
+        "¿Tarifa?",
+        "es",
+        "",
+        facts=[Fact("La tarifa es de EUR 48.000.", (1,)), Fact("Firmado el 3 de mayo.", (1,))],
+        suggestions=["Ofrecer un descuento de EUR 5.000."],
+        questions=["¿Preparo una factura de EUR 48.000?"],
+        sources=[source(1, "Clause 3. The fee is EUR 48,000.")],
+    )
+    gated = g.gate(answer)
+    assert gated.suggestions_text.startswith("Sugerencias, no acordadas")
+    assert "EUR 5.000 (propuesta)" in gated.suggestions_text
+    assert gated.questions_text.startswith("Preguntas:")
+    assert "Avisos:" in gated.text and "Warnings" not in gated.text
+    assert "Suggestions" not in gated.text and "(proposed)" not in gated.text

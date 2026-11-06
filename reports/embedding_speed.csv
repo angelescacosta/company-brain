@@ -1,4 +1,4 @@
 model,dimensions,seconds_20_chunks
-bge-m3:latest,1024,0.539
-embeddinggemma-2:270m,768,0.377
-qwen3-embedding:0.6b,1024,0.413
+bge-m3:latest,1024,0.643
+embeddinggemma-2:270m,768,0.351
+qwen3-embedding:0.6b,1024,0.499

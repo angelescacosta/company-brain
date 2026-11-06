@@ -37,6 +37,37 @@ if TYPE_CHECKING:
 NOT_IN_SOURCES = "[not in sources]"
 VALUE_REMOVED = "[value removed]"
 SUGGESTIONS_HEADING = "Suggestions, not agreed"
+# What the gate adds to an answer, in the answer's language (the model writes the rest).
+LABELS = {
+    "en": {
+        "suggestions": SUGGESTIONS_HEADING,
+        "proposed": "proposed",
+        "questions": "Questions:",
+        "warnings": "Warnings:",
+        "removed": "a statement without a retrieved source was removed: {}",
+        "value": "{} is not in the cited sources",
+        "name": "name not found in the cited sources: {}",
+        "unsupported": "not clearly supported by its sources: {}",
+        "question_value": "a value was removed from a question",
+    },
+    "es": {
+        "suggestions": "Sugerencias, no acordadas",
+        "proposed": "propuesta",
+        "questions": "Preguntas:",
+        "warnings": "Avisos:",
+        "removed": "se quitó una afirmación sin fuente encontrada: {}",
+        "value": "{} no aparece en las fuentes citadas",
+        "name": "nombre que no aparece en las fuentes citadas: {}",
+        "unsupported": "no está claramente respaldado por sus fuentes: {}",
+        "question_value": "se quitó un dato de una pregunta",
+    },
+}
+
+
+def labels(language: str) -> dict[str, str]:
+    return LABELS.get(language, LABELS["en"])
+
+
 CLAIM_FLOOR = 0.5
 EXCERPT = 500  # characters of the passage shown in the source window
 LEAD = 150  # characters kept before the cited value, for context
@@ -355,6 +386,7 @@ def gate(
     if not answer.readable:
         return Gated(text=UNREADABLE, warnings=["the model's output was not readable"])
     language = answer.language
+    say = labels(language)
     sources = {s.number: f"{s.hit.label}\n{s.hit.text}" for s in answer.sources}
     allowed = {_plain(a) for a in allowlist}
     warnings: list[str] = []
@@ -362,25 +394,25 @@ def gate(
     for fact in answer.facts:
         checked = check_fact(fact.text, list(fact.sources), sources, language)
         if not checked.citation_ok:
-            warnings.append(f"a statement without a retrieved source was removed: {fact.text[:60]}")
+            warnings.append(say["removed"].format(fact.text[:60]))
             lines.append(NOT_IN_SOURCES)
             continue
         for value in checked.failed_values:
-            warnings.append(f"{value} is not in the cited sources")
+            warnings.append(say["value"].format(value))
         cited = " ".join(sources[n] for n in fact.sources)
         for name in _NAME.findall(fact.text):
             if _plain(name) not in _plain(cited) and _plain(name) not in allowed:
-                warnings.append(f"name not found in the cited sources: {name}")
+                warnings.append(say["name"].format(name))
         if claim_score is not None and claim_score(cited, fact.text) < CLAIM_FLOOR:
-            warnings.append(f"not clearly supported by its sources: {fact.text[:60]}")
+            warnings.append(say["unsupported"].format(fact.text[:60]))
         lines.append(f"{checked.text} {render_citations(fact.sources)}".strip())
     facts_text = "\n".join(lines)
     box = ""
     if answer.suggestions:
         box = (
-            SUGGESTIONS_HEADING
+            say["suggestions"]
             + "\n"
-            + "\n".join(f"- {_mark(s, language, 'proposed')}" for s in answer.suggestions)
+            + "\n".join(f"- {_mark(s, language, say['proposed'])}" for s in answer.suggestions)
         )
     questions_text = ""
     if answer.questions:
@@ -388,12 +420,12 @@ def gate(
         for question in answer.questions:
             stripped = _strip_values(question, language)
             if stripped != question:
-                warnings.append("a value was removed from a question")
+                warnings.append(say["question_value"])
             cleaned.append(f"- {stripped}")
-        questions_text = "Questions:\n" + "\n".join(cleaned)
+        questions_text = say["questions"] + "\n" + "\n".join(cleaned)
     parts = [facts_text, box, questions_text]
     if warnings:
-        parts.append("Warnings:\n" + "\n".join(f"- {w}" for w in warnings))
+        parts.append(say["warnings"] + "\n" + "\n".join(f"- {w}" for w in warnings))
     text = "\n\n".join(p for p in parts if p)
     cited_numbers = set(parse_citations(text))
     shown = [
