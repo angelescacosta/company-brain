@@ -1,0 +1,103 @@
+group,file,field,expected,recognised,raw_text,result
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi.png,vendor,Larkspur Cabs,Larkspur Cabs,Larkspur Cabs,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi.png,date,2026-09-28,2026-09-28,Date: 28/09/2026,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi.png,total,23.40,23.40,TOTAL GBP 23.40,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi.png,currency,GBP,GBP,TOTAL GBP 23.40,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi photo.jpg,vendor,Larkspur Cabs,Larkspur Cabs,Larkspur Cabs,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi photo.jpg,date,2026-09-28,2026-09-28,Date: 28/09/2026,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi photo.jpg,total,23.40,23.40,TOTAL GBP 23.40,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi photo.jpg,currency,GBP,GBP,TOTAL GBP 23.40,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee.png,vendor,Copperkettle Coffee,Copperkettle Coffee,Copperkettle Coffee,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee.png,date,2026-10-06,2026-10-06,Date: 06 Oct 2026,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee.png,total,14.70,14.70,TOTAL GBP 14.70,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee.png,vat,2.45,2.45,VAT 20% 2.45,exact
+clean,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee.png,currency,GBP,GBP,TOTAL GBP 14.70,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.jpg,vendor,Copperkettle Coffee,Copperkettle Coffee,Copperkettle Coffee,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.jpg,date,2026-10-06,2026-10-06,Date: 06 Oct 2026,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.jpg,total,14.70,14.70,TOTAL GBP 14.70,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.jpg,vat,2.45,2.45,VAT 20% 2.45,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.jpg,currency,GBP,GBP,TOTAL GBP 14.70,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.heic,vendor,Copperkettle Coffee,Copperkettle Coffee,Copperkettle Coffee,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.heic,date,2026-10-06,2026-10-06,Date: 06 Oct 2026,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.heic,total,14.70,14.70,TOTAL GBP 14.70,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.heic,vat,2.45,2.45,VAT 20% 2.45,exact
+photo,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.heic,currency,GBP,GBP,TOTAL GBP 14.70,exact
+clean,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing.png,vendor,Brindlewood Print,Brindlewood Print,Brindlewood Print,exact
+clean,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing.png,date,2026-10-13,2026-10-13,Date: 13/10/2026,exact
+clean,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing.png,total,86.40,86.40,TOTAL GBP 86.40,exact
+clean,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing.png,vat,14.40,14.40,VAT 20% 14.40,exact
+clean,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing.png,currency,GBP,GBP,TOTAL GBP 86.40,exact
+photo,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing photo.jpg,vendor,Brindlewood Print,Brindlewood Print,Brindlewood Print,exact
+photo,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing photo.jpg,date,2026-10-13,2026-10-13,Date: 13/10/2026,exact
+photo,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing photo.jpg,total,86.40,86.40,TOTAL GBP 86.40,exact
+photo,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing photo.jpg,vat,14.40,14.40,VAT 20% 14.40,exact
+photo,Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing photo.jpg,currency,GBP,GBP,TOTAL GBP 86.40,exact
+clean,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail.png,vendor,Minsterline Rail Tours,Minsterline Rail Tours,Minsterline Rail Tours,exact
+clean,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail.png,date,2026-10-20,2026-10-20,Date: 20 Oct 2026,exact
+clean,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail.png,total,41.90,41.90,TOTAL GBP 41.90,exact
+clean,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail.png,vat,0.00,0.00,VAT 0% 0.00,exact
+clean,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail.png,currency,GBP,GBP,TOTAL GBP 41.90,exact
+photo,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail photo.jpg,vendor,Minsterline Rail Tours,Minsterline Rail Tours,Minsterline Rail Tours,exact
+photo,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail photo.jpg,date,2026-10-20,2026-10-20,Date: 20 Oct 2026,exact
+photo,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail photo.jpg,total,41.90,41.90,TOTAL GBP 41.90,exact
+photo,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail photo.jpg,vat,0.00,0.00,VAT 0% 0.00,exact
+photo,Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail photo.jpg,currency,GBP,GBP,TOTAL GBP 41.90,exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida.png,vendor,Asador Itxasbide,Asador Itxasbide,Asador Itxasbide,exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida.png,date,2026-10-15,2026-10-15,Fecha: 15/10/2026,exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida.png,total,64.90,64.90,"TOTAL EUR 64,90",exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida.png,vat,5.90,5.90,"IVA 10% 5,90",exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida.png,currency,EUR,EUR,"TOTAL EUR 64,90",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida photo.jpg,vendor,Asador Itxasbide,Asador Itxasbide,Asador Itxasbide,exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida photo.jpg,date,2026-10-15,2026-10-15,Fecha: 15/10/2026,exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida photo.jpg,total,64.90,64.90,"TOTAL EUR 64,90",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida photo.jpg,vat,5.90,5.90,"IVA 10% 5,90",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida photo.jpg,currency,EUR,EUR,"TOTAL EUR 64,90",exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible.png,vendor,Estación de servicio Gaztelu,Estación de servicio Gaztelu,Estación de servicio Gaztelu,exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible.png,date,2026-10-15,2026-10-15,Fecha: 15-10-2026,exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible.png,total,52.30,52.30,"TOTAL EUR 52,30",exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible.png,vat,9.08,9.08,"IVA 21% 9,08",exact
+clean,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible.png,currency,EUR,EUR,"TOTAL EUR 52,30",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.jpg,vendor,Estación de servicio Gaztelu,Estación de servicio Gaztelu,Estación de servicio Gaztelu,exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.jpg,date,2026-10-15,2026-10-15,Fecha: 15-10-2026,exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.jpg,total,52.30,52.30,"TOTAL EUR 52,30",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.jpg,vat,9.08,9.08,"IVA 21% 9,08",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.jpg,currency,EUR,EUR,"TOTAL EUR 52,30",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.heic,vendor,Estación de servicio Gaztelu,Estación de servicio Gaztelu,Estación de servicio Gaztelu,exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.heic,date,2026-10-15,2026-10-15,Fecha: 15-10-2026,exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.heic,total,52.30,52.30,"TOTAL EUR 52,30",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.heic,vat,9.08,9.08,"IVA 21% 9,08",exact
+photo,Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.heic,currency,EUR,EUR,"TOTAL EUR 52,30",exact
+clean,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria.png,vendor,Papelería Lirio Azul,Papelería Lirio Azul,Papelería Lirio Azul,exact
+clean,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria.png,date,2026-10-19,2026-10-19,Fecha: 19/10/2026,exact
+clean,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria.png,total,18.15,18.15,"TOTAL EUR 18,15",exact
+clean,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria.png,vat,3.15,3.15,"IVA 21% 3,15",exact
+clean,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria.png,currency,EUR,EUR,"TOTAL EUR 18,15",exact
+photo,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria photo.jpg,vendor,Papelería Lirio Azul,Papelería Lirio Azul,Papelería Lirio Azul,exact
+photo,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria photo.jpg,date,2026-10-19,2026-10-19,Fecha: 19/10/2026ł,exact
+photo,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria photo.jpg,total,18.15,18.15,"TOTAL EUR 18,15",exact
+photo,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria photo.jpg,vat,3.15,3.15,"IVA 21% 3,15",exact
+photo,Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria photo.jpg,currency,EUR,EUR,"TOTAL EUR 18,15",exact
+clean,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento.png,vendor,Aparcamiento Trébol,Aparcamiento Trébol,Aparcamiento Trébol,exact
+clean,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento.png,date,2026-10-14,2026-10-14,Fecha: 14/10/2026,exact
+clean,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento.png,total,7.26,7.26,"TOTAL EUR 7,26",exact
+clean,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento.png,vat,1.26,1.26,"IVA 21% 1,26",exact
+clean,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento.png,currency,EUR,EUR,"TOTAL EUR 7,26",exact
+photo,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento photo.jpg,vendor,Aparcamiento Trébol,Aparcamiento Trébol,Aparcamiento Trébol,exact
+photo,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento photo.jpg,date,2026-10-14,2026-10-14,Fecha: 14/10/2026,exact
+photo,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento photo.jpg,total,7.26,7.26,"TOTAL EUR 7,26",exact
+photo,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento photo.jpg,vat,1.26,1.26,"IVA 21% 1,26",exact
+photo,Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento photo.jpg,currency,EUR,EUR,"TOTAL EUR 7,26",exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,owner,Marcus Bell,Marcus Bell,1. Update the Hull depot map - Marcus Bell - 30 Oct 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,due,2026-10-30,2026-10-30,1. Update the Hull depot map - Marcus Bell - 30 Oct 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,action,Update the Hull depot map,Update the Hull depot map,1. Update the Hull depot map - Marcus Bell - 30 Oct 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,owner,Dana Whitcombe,Dana Whitcombe,2. Book the driver briefing room - Dana Whitcombe - 2 Nov 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,due,2026-11-02,2026-11-02,2. Book the driver briefing room - Dana Whitcombe - 2 Nov 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,action,Book the driver briefing room,Book the driver briefing room,2. Book the driver briefing room - Dana Whitcombe - 2 Nov 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,owner,Sofía Lindqvist,,3. Print the handover checklists - Sofía Lindavist - 29 Oct 2026,miss
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,due,2026-10-29,2026-10-29,3. Print the handover checklists - Sofía Lindavist - 29 Oct 2026,exact
+whiteboard,Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg,action,Print the handover checklists,Print the handover checklists,3. Print the handover checklists - Sofía Lindavist - 29 Oct 2026,exact
+cord,Test data (fictional)/Public/Receipts (CORD)/CORD test 0000.png,total,60000,60000,TOTAL DISC $ -60.000,exact
+cord,Test data (fictional)/Public/Receipts (CORD)/CORD test 0001.png,total,91000,91000,TOTAL 91000,exact
+cord,Test data (fictional)/Public/Receipts (CORD)/CORD test 0002.png,total,28000,28000,"TOTAL SALES 28,000",exact
+cord,Test data (fictional)/Public/Receipts (CORD)/CORD test 0004.png,total,174600,200000,"lep. TOTAL 200,000",miss
+cord,Test data (fictional)/Public/Receipts (CORD)/CORD test 0007.png,total,111000,111000,"Total 111,000",exact

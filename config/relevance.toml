@@ -1,0 +1,7 @@
+# Relevance floor per language (T22): if the best reranker score (raw logit of
+# cross-encoder/mmarco-mMiniLMv2-L12-H384-v1) is below it, Answer mode returns
+# the fixed not-found message. Provisional values, low enough to rarely
+# trigger; T35 stage 4 tunes them on the tuning questions and records the result.
+[threshold]
+en = 0.5
+es = -1.0

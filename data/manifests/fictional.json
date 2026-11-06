@@ -1,0 +1,482 @@
+{
+ "files": [
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi.png",
+   "sha256": "02861b86670987d3a1a03a4f35d6c988827040713d7bb1146109093ffc4670ab",
+   "task": "T11R",
+   "client": "Harrowgate Freight",
+   "role": "receipt-clean",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 1 taxi photo.jpg",
+   "sha256": "78a9d236461b0f37da77f3964f98e3a17881bbbfcdc6d8c795defa7b446ce6ba",
+   "task": "T11R",
+   "client": "Harrowgate Freight",
+   "role": "receipt-photo",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee.png",
+   "sha256": "873c4ff900984677a57c201492e926638176f8ae0086fa1b583f9157acce78fc",
+   "task": "T11R",
+   "client": "Harrowgate Freight",
+   "role": "receipt-clean",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.jpg",
+   "sha256": "09833c070b33931ecf8060805507d1549078b779640e9d965e85df66175d090c",
+   "task": "T11R",
+   "client": "Harrowgate Freight",
+   "role": "receipt-photo",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Receipts/Receipt 2 coffee photo.heic",
+   "sha256": "e526aa567e41793fa21659d90aa94235a52a4d87575cc7bec5f79b38cecd0126",
+   "task": "T11R",
+   "client": "Harrowgate Freight",
+   "role": "receipt-heic",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing.png",
+   "sha256": "a25c6e6506317e22aa3f66aa27eb150e00ffff41b30b3c8e8e3c268a5fab80af",
+   "task": "T11R",
+   "client": "Pellmore Dental Group",
+   "role": "receipt-clean",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Receipts/Receipt 3 printing photo.jpg",
+   "sha256": "06c982c4c32a51967840e7bc71dff8f7b95cdb844024888a6aef794ba8f2ce05",
+   "task": "T11R",
+   "client": "Pellmore Dental Group",
+   "role": "receipt-photo",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail.png",
+   "sha256": "67b796b9913117139f4febe95117819c2e963ed06d89941f2f3e4a769bfd3f11",
+   "task": "T11R",
+   "client": "Quillstone Hotels",
+   "role": "receipt-clean",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Receipts/Receipt 4 rail photo.jpg",
+   "sha256": "f28e2626148edea5517b49eabd9f1d6f349940e3eef171d2aec8ffa6afbd113d",
+   "task": "T11R",
+   "client": "Quillstone Hotels",
+   "role": "receipt-photo",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida.png",
+   "sha256": "2841f7c8929b81a75e6b635009a18fe47b52825e16ebab4ac6f77d41bc20a229",
+   "task": "T11R",
+   "client": "Conservas Arrieta",
+   "role": "receipt-clean",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 5 comida photo.jpg",
+   "sha256": "9ead9e7220fb6131b3da25f7aecded6e3fac8f257acfd8192deb9482cdec0c9d",
+   "task": "T11R",
+   "client": "Conservas Arrieta",
+   "role": "receipt-photo",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible.png",
+   "sha256": "2bc88fb348fa449775bfa6b65500cd46426c8be41984dd9161a42295c9cb45cd",
+   "task": "T11R",
+   "client": "Conservas Arrieta",
+   "role": "receipt-clean",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.jpg",
+   "sha256": "c908f878deb81add7f3a82f2ae11193ae523cab986cdb849106628ec71043d4d",
+   "task": "T11R",
+   "client": "Conservas Arrieta",
+   "role": "receipt-photo",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Receipts/Recibo 6 combustible photo.heic",
+   "sha256": "46f1c1f884fba21a157bd8947935e0d0393aaef178aaae3ae1abc68588e334d7",
+   "task": "T11R",
+   "client": "Conservas Arrieta",
+   "role": "receipt-heic",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria.png",
+   "sha256": "0205d92420b814c0a6c5d7a9d2c0571c7bac6bffcf32f897f446ea1cac95b096",
+   "task": "T11R",
+   "client": "Talleres Benamar",
+   "role": "receipt-clean",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Receipts/Recibo 7 papeleria photo.jpg",
+   "sha256": "5c1f7334d0a88af058d229faa1b834f47c32282976c540a12920568a7847219b",
+   "task": "T11R",
+   "client": "Talleres Benamar",
+   "role": "receipt-photo",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento.png",
+   "sha256": "18b48e18cc5479b7b4998509299242447ad0d377465a5d09ffaa4cdd92797330",
+   "task": "T11R",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "receipt-clean",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Receipts/Recibo 8 aparcamiento photo.jpg",
+   "sha256": "64cf2fe853b3c981de1ea456e1f1b56342f34db4563ec6b0c6596f774f97895f",
+   "task": "T11R",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "receipt-photo",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Receipts/Whiteboard Hull rollout.jpg",
+   "sha256": "49687338a6ce4d8013226ffe44f694aa6ed7a60012cd68bcbc87678f8f4463a0",
+   "task": "T11R",
+   "client": "Harrowgate Freight",
+   "role": "whiteboard",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Transcripts/Call 2026-09-08.vtt",
+   "sha256": "32ad76e67f81bb139eda2034fc1d0565ac769656b33e335374930c7f25790a82",
+   "task": "T11",
+   "client": "Harrowgate Freight",
+   "role": "call-vtt",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Transcripts/Call 2026-10-06.docx",
+   "sha256": "4bb0af06ccd800fac6a2f8be9c460931327460597c5af7a83517f55e4294e388",
+   "task": "T11",
+   "client": "Harrowgate Freight",
+   "role": "call-docx",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Proposals/Proposal.pdf",
+   "sha256": "2c2647409473ceedee25e6813608379a9af40147ed6617013238c69bc995d355",
+   "task": "T11",
+   "client": "Harrowgate Freight",
+   "role": "proposal",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Contracts/Consulting agreement (signed).docx",
+   "sha256": "eed99075ef846f4175ecc8ceaefcf5c94d03bacf0dbb8ea47a2743e7f7889732",
+   "task": "T11",
+   "client": "Harrowgate Freight",
+   "role": "contract",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Contracts/Consulting agreement draft v1.docx",
+   "sha256": "6b4431bee2d4ff14ce3a2e253195fbd4dc8df192ff6a233f38190ea3e149ad25",
+   "task": "T11",
+   "client": "Harrowgate Freight",
+   "role": "draft",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Harrowgate Freight/Reports/Progress report.pdf",
+   "sha256": "c23d0b68b4f2f4e9aa19ba6dc28dd4206c8407457a4f6aa199f30e1bc3e79f92",
+   "task": "T11",
+   "client": "Harrowgate Freight",
+   "role": "report",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Transcripts/Call 2026-08-27.vtt",
+   "sha256": "4790e05d6b1050c94d3b671cf533b7012a1a14453aaffe1b0b3e4c10c0d890a3",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "call-vtt",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Transcripts/Call 2026-10-13.docx",
+   "sha256": "f62bfe0a2b57a4d0c69bdde1a09031ecd47a6d43bc943dd08589b541d6ff2cba",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "call-docx",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Proposals/Proposal.pdf",
+   "sha256": "e8dc195be07102c8da936731959d8b5397460ecaffb1215b15ee22fbc0fc53b7",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "proposal",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Contracts/Consulting agreement (signed).docx",
+   "sha256": "e7a27d99a789e1a6026f3d1c0b423ab6f95ce85566de5abca533ffa47d0c4ebc",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "contract",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Contracts/Consulting agreement draft v1.docx",
+   "sha256": "36eebd2c830df9ce6e56546093d495e5c77eded7b8d475bb25568beb7609ef1f",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "draft",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Reports/Progress report.pdf",
+   "sha256": "7a6ef0416f1e2128533ea26c868bcd50bb66027bf7fb411687e7387ddfc663d8",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "report",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Pellmore Dental Group/Reports/Internal notes.docx",
+   "sha256": "99512e9b331413d23ad68d604fc3e689f83fca78f0e6824426c5837ddaf66e27",
+   "task": "T11",
+   "client": "Pellmore Dental Group",
+   "role": "planted",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Transcripts/Call 2026-09-01.vtt",
+   "sha256": "17dbaf7fa90f553bd7b456ce737f544523f02501363f57a1c3851163c052ca03",
+   "task": "T11",
+   "client": "Quillstone Hotels",
+   "role": "call-vtt",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Transcripts/Call 2026-10-20.docx",
+   "sha256": "50995ead52c00486c9e00d6f73791faa78f0dfbe5d88be2a8b94d1a10d3efba0",
+   "task": "T11",
+   "client": "Quillstone Hotels",
+   "role": "call-docx",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Proposals/Proposal.pdf",
+   "sha256": "7b9ec1fba5766288fb5fdbded0be05742a3466f912d0867128c4ae37d1a61c33",
+   "task": "T11",
+   "client": "Quillstone Hotels",
+   "role": "proposal",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Contracts/Consulting agreement (signed).docx",
+   "sha256": "72ebf4fdf90f41ca2d9ae9d3eabb13cb3f58dc0e0f081b7c0e8129e937718236",
+   "task": "T11",
+   "client": "Quillstone Hotels",
+   "role": "contract",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Contracts/Consulting agreement draft v1.docx",
+   "sha256": "36bd90b675c786e9f7ef889d07d67897f021f5b42c733b05b4b75dabc126a551",
+   "task": "T11",
+   "client": "Quillstone Hotels",
+   "role": "draft",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Quillstone Hotels/Reports/Progress report.xlsx",
+   "sha256": "dbacfd883ebc6309a936f971c547fe9395d93c3805adddd0f7df1288cf6ecf10",
+   "task": "T11",
+   "client": "Quillstone Hotels",
+   "role": "report",
+   "language": "en"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Transcripts/Llamada 2026-08-31.vtt",
+   "sha256": "3cb1584da0ac8cac458ce8d7b81f43361b092dec4968678934bfac80af0f789d",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "call-vtt",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Transcripts/Llamada 2026-10-15.docx",
+   "sha256": "122d05c19d4307f2a00a3b5ffce5100bd8fd0159066282ca3bf3c88164220bf3",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "call-docx",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Proposals/Propuesta.pdf",
+   "sha256": "f1ef03663a98523ac17e1154048627e5fbaa5becc1c279b80614d1dab8956e29",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "proposal",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Contracts/Contrato de consultoria (firmado).docx",
+   "sha256": "ec9e57ba8f738f08204be62818da746949517280454ca22ea1ecf2c334b1dd2f",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "contract",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Contracts/Contrato de consultoria borrador v1.docx",
+   "sha256": "b27245ec9ca740e79f102ace9d54cfad99f743516622ce9963955f86bace2f58",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "draft",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Reports/Informe de avance.pdf",
+   "sha256": "cb7df938e3d965f4204466cca546b4339993ac198d6e2e0d853137f7146d01ac",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "report",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Conservas Arrieta/Reports/Notas internas.docx",
+   "sha256": "678634eee10282d6379bfb6acb762e588128c3bd55742fe574dc22763ee5c844",
+   "task": "T11",
+   "client": "Conservas Arrieta",
+   "role": "planted",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Transcripts/Llamada 2026-09-04.vtt",
+   "sha256": "f1d0839a5759cf5837107dc3b5c9987f877fd51e35c15ea754288dd6f376183c",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "call-vtt",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Transcripts/Llamada 2026-10-19.docx",
+   "sha256": "d49ed80b8fd03a29df2a10000aaf9692243c8eec5f8537c089052c0e81947b49",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "call-docx",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Proposals/Propuesta.pdf",
+   "sha256": "205fccf7b0f261df7cc7222ca0f3bdaf099c4e207cd8fb37ce21ae83664bd7ef",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "proposal",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Contracts/Contrato de consultoria (firmado).docx",
+   "sha256": "d95676e0124ebb2d062153027ca36abee3dd8ecb75de5fe35e1dc67ba86c3c72",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "contract",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Contracts/Contrato de consultoria borrador v1.docx",
+   "sha256": "d40df149f30f1403c51392f1d3c3fc7d2356f11c9752dca990a2986f92e95aca",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "draft",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Reports/Informe de avance.pdf",
+   "sha256": "a5d079fbf77cd869ed4b74e27bf1b2d4c33bbaaaf78b1c70e226aa72e0c4318c",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "report",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Talleres Benamar/Contracts/Carta de aceptacion escaneada.pdf",
+   "sha256": "4af4754abc5578d30219a0f645b8c823a4166bcf041e208ff4b79427502f51e7",
+   "task": "T11",
+   "client": "Talleres Benamar",
+   "role": "scanned",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Transcripts/Llamada 2026-09-09.vtt",
+   "sha256": "3e0b8fe3a62dc7b9f73ab529cd6d6a9b805e06d8e4b07a2b6eba1906e6ddbd35",
+   "task": "T11",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "call-vtt",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Transcripts/Llamada 2026-10-14.docx",
+   "sha256": "23d58d60e564c6f4f1044ec022a5bfb8f4f21dfb16a4115da77acafadf0d9e97",
+   "task": "T11",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "call-docx",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Proposals/Propuesta.pdf",
+   "sha256": "4a9603d262641c369d821c6cda7ecccba39271df1f85ce3edcaa48b94f8867b0",
+   "task": "T11",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "proposal",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Contracts/Contrato de consultoria (firmado).docx",
+   "sha256": "1590e452922b5043b34232e3ab4d96cc2cf43a5dcf782960d221d8689c11c922",
+   "task": "T11",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "contract",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Contracts/Contrato de consultoria borrador v1.docx",
+   "sha256": "60d8ea6f5979f90b21a7a65dfe3d150c6cc30f5c8b734a2659aec57e4ea3f674",
+   "task": "T11",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "draft",
+   "language": "es"
+  },
+  {
+   "path": "Test data (fictional)/Clients/Clinica Veterinaria Olmedo/Reports/Informe de avance.xlsx",
+   "sha256": "501c8bc8b217232e97704ffceb8770e48b74e204a88d87251ae09faaa4a50aa6",
+   "task": "T11",
+   "client": "Clinica Veterinaria Olmedo",
+   "role": "report",
+   "language": "es"
+  },
+  {
+   "path": "Methodology/Methodology (EN).docx",
+   "sha256": "055e801132b8d0dce088fa140d6f4e7b65d0e20ecaeeec977a9b4aab9ae5bcf3",
+   "task": "T13",
+   "role": "methodology",
+   "language": "en"
+  },
+  {
+   "path": "Methodology/Metodologia (ES).docx",
+   "sha256": "79ce08bf0a4ce91d0d2d0372ba33fa8cd61bb5790e7935117ddeef14d60e12e1",
+   "task": "T13",
+   "role": "methodology",
+   "language": "es"
+  }
+ ]
+}

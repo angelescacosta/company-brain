@@ -1,0 +1,12 @@
+# Answering model (T7, revision 9: one model, memory pressure rule).
+[roster]
+models = ["qwen3.5:4b"]
+path = "single-model"
+source = "reports/benchmark_early.csv"
+measured = "2026-10-22"
+
+[full_benchmark]
+result = "pass"
+missed = []
+source = "reports/benchmark_full.csv"
+measured = "2026-10-25"

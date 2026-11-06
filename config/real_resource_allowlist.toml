@@ -1,0 +1,56 @@
+# Tests that may use real resources (PRD, "Standard checks and test isolation").
+# A test may use them only inside `real_resources(...)`, and only the resources
+# and writes listed here. A marker alone grants nothing.
+#
+# resources: drive, data-dir, exports-dir, system-db, keychain, service-ports,
+#            network-probe, wifi
+# writes:    "<resource>:<what>", listed exactly; an empty list means read-only.
+
+[[exception]]
+test = "tests/integration/test_egress_probe.py::*"
+task = "T4"
+resources = ["network-probe"]
+writes = []
+reason = "Firewall probes through the real blocked programs (read-only)."
+
+[[exception]]
+test = "tests/integration/test_drive_tree.py::*"
+task = "T10"
+resources = ["drive"]
+writes = ["drive:folder-tree"]
+reason = "Checks the Drive root (read-only) and creates the folder tree and backup folder."
+
+[[exception]]
+test = "tests/test_public_data.py::test_downloaded_files_match_their_checksums"
+task = "T12"
+resources = ["drive"]
+writes = []
+reason = "Reads the public test files in the Drive root through the content guard (read-only)."
+
+[[exception]]
+test = "tests/test_docling_convert.py::test_receipts_and_whiteboard"
+task = "T17"
+resources = ["drive"]
+writes = []
+reason = "Reads the five public CORD receipt images through the content guard (read-only)."
+
+[[exception]]
+test = "tests/test_final_eval.py::*"
+task = "T38"
+resources = ["system-db", "keychain"]
+writes = []
+reason = "Locked run: reads the sealing key and the system database."
+
+[[exception]]
+test = "tests/integration/test_rehearsal.py::*"
+task = "T43"
+resources = ["drive", "data-dir", "system-db", "service-ports", "wifi"]
+writes = ["data-dir:service-state", "system-db:chat-records", "wifi:toggle"]
+reason = "Offline rehearsal: reads the root, runs the real system and toggles Wi-Fi."
+
+[[exception]]
+test = "tests/test_release_report.py::*"
+task = "T45"
+resources = ["drive", "data-dir", "system-db", "service-ports"]
+writes = []
+reason = "Release gate: read-only validation and one connected smoke test."

@@ -1,0 +1,64 @@
+# T34D input contract: the only files the dashboard build opens (besides the manifest-listed
+# documents and images, read through the guarded reader, and their converted copies).
+# Unknown fields fail the build; `optional` fields may be missing.
+
+[eval_runs]
+path = "reports/eval_runs.csv"
+fields = ["run_id", "date", "split", "stage", "config", "metric", "language", "value", "count", "total"]
+producer = "T34, T35 (tuning rows), T38 (locked rows, skipped)"
+available = "after every evaluation run"
+
+[questions]
+path = "reports/runs/*/questions.jsonl"
+fields = ["id", "language", "category", "question", "split"]
+optional = ["passages", "client", "answer", "score", "passed", "seconds", "sources", "warnings", "leaks", "forbidden_shown", "unsourced_shown", "citation_support", "faithfulness", "answer_relevancy", "judge_input", "judge_error"]
+producer = "T34, T35 (tuning only)"
+available = "after every evaluation run"
+
+[manifest_fictional]
+path = "data/manifests/fictional.json"
+producer = "T11, T11R, T11P, T12, T13"
+available = "always"
+
+[manifest_public]
+path = "data/manifests/public.json"
+producer = "T12"
+available = "always"
+
+[benchmark_early]
+path = "reports/benchmark_early.csv"
+fields = ["model", "baseline_memory_bytes", "peak_memory_bytes", "swap_growth_bytes", "first_token_s", "total_s", "flagged"]
+optional = ["idle_memory_bytes", "peak_pressure", "pressure_samples", "longest_gap_s", "pressure_verdict"]
+producer = "T7"
+available = "after the early benchmark"
+
+[benchmark_full]
+path = "reports/benchmark_full.csv"
+fields = ["model", "baseline_memory_bytes", "peak_memory_bytes", "swap_growth_bytes", "first_token_s", "total_s", "flagged"]
+optional = ["idle_memory_bytes", "peak_pressure", "pressure_samples", "longest_gap_s", "pressure_verdict", "mode", "run", "cold"]
+producer = "T33"
+available = "after the full benchmark"
+
+[ocr]
+path = "reports/ocr_receipts.csv"
+fields = ["group", "file", "field", "expected", "recognised", "raw_text", "result"]
+producer = "T17, T11P"
+available = "after every OCR run"
+
+[blind_ratings]
+path = "reports/blind_ratings_unblinded.csv"
+fields = ["id", "model", "score"]
+optional = ["language"]
+producer = "T36 unblind step, after H6"
+available = "after the unblinding; its SHA-256 is recorded next to it (.sha256)"
+
+[blind_ratings_hash]
+path = "reports/blind_ratings_unblinded.csv.sha256"
+producer = "T36 unblind step"
+available = "with the unblinded ratings"
+
+[final_eval]
+path = "reports/final_eval.md"
+fields = ["metric", "language", "value", "count", "target"]
+producer = "T38 (only its aggregate table is read)"
+available = "after the final locked evaluation"

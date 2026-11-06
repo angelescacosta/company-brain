@@ -1,0 +1,2 @@
+model,baseline_memory_bytes,peak_memory_bytes,swap_growth_bytes,first_token_s,total_s,flagged,idle_memory_bytes,peak_pressure,pressure_samples,longest_gap_s,pressure_verdict
+qwen3.5:4b,11251204096,15341322240,6818700984,11.55,26.31,no,10303062016,warning,1479,0.6,pass

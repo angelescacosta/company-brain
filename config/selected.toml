@@ -1,0 +1,29 @@
+# Frozen configuration (T37). Written by scripts/freeze.py; do not edit by hand.
+
+[retrieval]
+embedding = "embeddinggemma-2:270m"
+embedding_digest = "3963be2b16735897054a438b91f1bc64bf454df624967280be2a2d41874131aa"
+budget = 500
+reranker = "on"
+reranker_model = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1"
+threshold_en = 0.5
+threshold_es = -1.0
+
+[answer]
+model = "qwen3.5:4b"
+model_digest = "7f3251fa6878a78a606bcb3c074283306e5ad2ea411a7774a9dd98a4bc7f2d13"
+status = "selected"
+mean_owner_score = 4.8
+hard_blockers = 0
+meets_targets = true
+latency_s = 8.11
+
+[evidence]
+frozen = "2026-11-06 11:33"
+tuning_run = "20261025-205047-4535ba"
+stage_runs = ["20261025-194943-stage1", "20261025-204852-stage2"]
+ratings_sha256 = "fdab88f47d52d1f17483e0a08aaf1f203dd4a9f73ce8e3c36d9ffe6ffe38a378"
+models_toml_sha256 = "8f223592a9e9949b855f6003a1fc5c41ab9d9a23f807bd214184ec52055141f7"
+relevance_toml_sha256 = "00f8e07ab183ffa33645329aa1709d9d3132ade70b324a97061e4b64419e0bfd"
+versions_toml_sha256 = "a9fa010492fc89f35aaccd6657550e2fad2dc057ef21fadce384bad050581ec9"
+benchmark = "reports/benchmark_full.csv (bge-m3, the largest embedding, as worst case)"

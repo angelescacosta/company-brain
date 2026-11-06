@@ -1,0 +1,5 @@
+#!/bin/bash
+# brainctl: the one coordinator command for start, stop, health and update (T20U).
+# Usage: scripts/brainctl start|stop|health|update [--trigger launcher|after_start|nightly|manual]
+cd "$(dirname "$0")/.." || exit 1
+exec "$HOME/.local/bin/uv" run --quiet python -m company_brain.launcher "$@"

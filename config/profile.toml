@@ -1,0 +1,3 @@
+# Demo profile and mode (T9). Only mode = "test" is allowed in this project.
+mode = "test"
+demo_profile = "full"

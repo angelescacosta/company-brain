@@ -1,0 +1,12 @@
+{
+ "PYSEC-2026-2447": {
+  "severity": null,
+  "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-2447",
+  "retrieved": "2026-10-24"
+ },
+ "PYSEC-2026-3046": {
+  "severity": null,
+  "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-3046",
+  "retrieved": "2026-10-24"
+ }
+}

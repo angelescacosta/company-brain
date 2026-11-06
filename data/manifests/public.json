@@ -1,0 +1,157 @@
+{
+ "files": [
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service Agreement.pdf",
+   "sha256": "7837df24989af83a369b3f1e8cf7aaf8b2cb38d85faef493496dac19830debde",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Service/GpaqAcquisitionHoldingsInc_20200123_S-4A_EX-10.8_11951679_EX-10.8_Service%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/FerroglobePlc_20150624_F-4A_EX-10.20_9154746_EX-10.20_Outsourcing Agreement.pdf",
+   "sha256": "9d8734bf7d20fe8e2e2503c7608e5f19f4ebf5858c65a26ef38cb84bc79eeaa3",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Outsourcing/FerroglobePlc_20150624_F-4A_EX-10.20_9154746_EX-10.20_Outsourcing%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/ArcaUsTreasuryFund_20200207_N-2_EX-99.K5_11971930_EX-99.K5_Development Agreement.pdf",
+   "sha256": "e917eb721ace4101a21cafb18c530c5449a1814aeee2f29a3a09978ab05ff896",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Development/ArcaUsTreasuryFund_20200207_N-2_EX-99.K5_11971930_EX-99.K5_Development%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/Freecook_20180605_S-1_EX-10.3_11233807_EX-10.3_Hosting Agreement.pdf",
+   "sha256": "4f7f73fad7d3f00c1f17c11894ac56867d049a7de006b38f172120e5c7bf458e",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Hosting/Freecook_20180605_S-1_EX-10.3_11233807_EX-10.3_Hosting%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual Property Agreement.pdf",
+   "sha256": "90f601b037396d105278da91ff3db5edc973a673fa87da986327016e5f9a63d6",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/IP/CerenceInc_20191002_8-K_EX-10.4_11827494_EX-10.4_Intellectual%20Property%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/AlliedEsportsEntertainmentInc_20190815_8-K_EX-10.19_11788293_EX-10.19_Content License Agreement.pdf",
+   "sha256": "2c5fe2d4f89cd8f305e99eefac75177858c8fd57155b4347a3b010e270e3ae8a",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/License_Agreements/AlliedEsportsEntertainmentInc_20190815_8-K_EX-10.19_11788293_EX-10.19_Content%20License%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/AzulSa_20170303_F-1A_EX-10.3_9943903_EX-10.3_Maintenance Agreement2.pdf",
+   "sha256": "8160e0472b7ba8fe90057d0f1fbb0ff7d0eae441317891219227aa61cb313ae3",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Maintenance/AzulSa_20170303_F-1A_EX-10.3_9943903_EX-10.3_Maintenance%20Agreement2.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/BravatekSolutionsInc_20170418_8-K_EX-10.1_10205739_EX-10.1_Reseller Agreement.pdf",
+   "sha256": "fa0947b28a7ac9a78dcb1f47c6090a2a173cb66db62d92fa05f4d017918744af",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Reseller/BravatekSolutionsInc_20170418_8-K_EX-10.1_10205739_EX-10.1_Reseller%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/FuseMedicalInc_20190321_10-K_EX-10.43_11575454_EX-10.43_Distributor Agreement.pdf",
+   "sha256": "692444f7ad492a7a15297115d7af9b44412d616570f4df9c72243895a8f7df93",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Distributor/FuseMedicalInc_20190321_10-K_EX-10.43_11575454_EX-10.43_Distributor%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Contracts (CUAD)/AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement.pdf",
+   "sha256": "623d1896671b5e948c55988edc44cdd74d0a3e0056e54aa3a266ff4b1480bfb0",
+   "task": "T12",
+   "role": "contract",
+   "language": "en",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/theatticusproject/cuad/resolve/a3c393f5d103fd0c516374e4fdff676c8176dcb1/CUAD_v1/full_contract_pdf/Part_I/Supply/AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply%20Agreement.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Annual reports/UK Statistics Authority annual report 2024-25.pdf",
+   "sha256": "476bd0ecaf890f7841fcf18af0f7a7bcf866120189e2dce729eb4da281193123",
+   "task": "T12",
+   "role": "annual-report",
+   "language": "en",
+   "licence": "OGL-UK-3.0",
+   "source": "https://uksa.statisticsauthority.gov.uk/wp-content/uploads/sites/2/2025/07/Annual-report-and-accounts-2024-to-2025.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Annual reports/Ararteko informe anual 2024.pdf",
+   "sha256": "53b23a666776f104e6e275ee5f93f938c53f324ec76f60b36efdd1de7ce85e19",
+   "task": "T12",
+   "role": "annual-report",
+   "language": "es",
+   "licence": "CC-BY-4.0",
+   "source": "https://www.theioi.org/downloads/btfis/Ararteko%20-%20Informe%20anual%202024%20-%20ES.pdf"
+  },
+  {
+   "path": "Test data (fictional)/Public/Receipts (CORD)/CORD test 0000.png",
+   "sha256": "8612d04b70f430f3aef07fbbd5200e382dcc4152b344cc2eff9f735f05a257c8",
+   "task": "T12",
+   "role": "receipt",
+   "language": "id",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/test-00000-of-00001-9c204eb3f4e11791.parquet (image_id 0)"
+  },
+  {
+   "path": "Test data (fictional)/Public/Receipts (CORD)/CORD test 0001.png",
+   "sha256": "5852cbe48df03646524e717e987eb3d0ac329a52fd192070b5fda1222a053789",
+   "task": "T12",
+   "role": "receipt",
+   "language": "id",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/test-00000-of-00001-9c204eb3f4e11791.parquet (image_id 1)"
+  },
+  {
+   "path": "Test data (fictional)/Public/Receipts (CORD)/CORD test 0002.png",
+   "sha256": "571ac6af26e75de8c06747a8c536c778f19a4562879090813571eddc74603d34",
+   "task": "T12",
+   "role": "receipt",
+   "language": "id",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/test-00000-of-00001-9c204eb3f4e11791.parquet (image_id 2)"
+  },
+  {
+   "path": "Test data (fictional)/Public/Receipts (CORD)/CORD test 0004.png",
+   "sha256": "8f3eee7068c96e86cdb2e4b5c53085cb5e1439462edd55c373548cb1962801ad",
+   "task": "T12",
+   "role": "receipt",
+   "language": "id",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/test-00000-of-00001-9c204eb3f4e11791.parquet (image_id 4)"
+  },
+  {
+   "path": "Test data (fictional)/Public/Receipts (CORD)/CORD test 0007.png",
+   "sha256": "810d3545f4105b19757c4b8b35934a477cde8cd1875302d9092315d2f960ef93",
+   "task": "T12",
+   "role": "receipt",
+   "language": "id",
+   "licence": "CC-BY-4.0",
+   "source": "https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/test-00000-of-00001-9c204eb3f4e11791.parquet (image_id 7)"
+  }
+ ]
+}

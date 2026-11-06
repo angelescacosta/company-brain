@@ -1,0 +1,67 @@
+[project]
+name = "company-brain"
+version = "0.1.0"
+description = "Private RAG assistant for a consultancy (public and fictional demonstration only)"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "docling>=2.140.0",
+    "fpdf2>=2.8.9",
+    "jsonschema>=4.26.0",
+    "langchain>=1.4.6",
+    "langchain-docling>=3.0.0",
+    "langchain-postgres>=0.0.19",
+    "numpy>=2.5.4",
+    "ocrmac>=1.0.1",
+    "ollama>=0.6.3",
+    "openpyxl>=3.1.5",
+    "pillow-heif>=1.8.1",
+    "pillow>=13.0.0",  # T46: fixes 37 advisories in 12.3.0
+    "playwright>=1.64.0",
+    "psycopg[binary]>=3.3.6",
+    "pyarrow>=26.0.0",
+    "pypdfium2>=5.14.0",
+    "python-docx>=1.2.0",
+    "ragas>=0.4.3",
+    "sentence-transformers>=6.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.170.5",
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+    "shellcheck-py>=0.11.0.1",
+    "types-jsonschema==4.26.0.20261006",
+    "types-openpyxl<3.1.5.20261007",
+]
+
+[build-system]
+requires = ["uv_build>=0.13,<0.14"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers -p company_brain.testing.pytest_plugin -p pytester"
+markers = [
+    "integration: needs running services; part of CHK5",
+    "slow: benchmarks and tuning runs",
+    "destructive: backup, restore, update and delete",
+    "release: locked run, offline rehearsal and release gate",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["presentation", "publish"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S603", "S605", "S607", "S108"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true

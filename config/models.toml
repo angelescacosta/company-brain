@@ -1,0 +1,111 @@
+# Pinned models and conversion assets (T3). Written by scripts/pin_models.py;
+# checked by tests/integration/test_models_present.py.
+
+[ollama."qwen3.5:9b"]
+digest = "d63f830f28d515fefea546f213fca7a75e9dd5176ef51a6deabc952d1c99a911"
+size = 7639229431
+parameters = ""
+quantization = ""
+
+[ollama."qwen3.5:4b"]
+digest = "7f3251fa6878a78a606bcb3c074283306e5ad2ea411a7774a9dd98a4bc7f2d13"
+size = 3973305013
+parameters = ""
+quantization = "nvfp4"
+
+[ollama."gemma4:12b"]
+digest = "c7597fc90b86aff6965317f37dd5465402284e26382d9b4bf2dfe3ef1491f4b6"
+size = 7714091504
+parameters = ""
+quantization = ""
+
+[ollama."qwen3-embedding:0.6b"]
+digest = "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+size = 639150858
+parameters = "595.78M"
+quantization = "Q8_0"
+
+[ollama."bge-m3:latest"]
+digest = "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+size = 1157672605
+parameters = "566.70M"
+quantization = "F16"
+
+[ollama."embeddinggemma-2:270m"]
+digest = "3963be2b16735897054a438b91f1bc64bf454df624967280be2a2d41874131aa"
+size = 378346995
+parameters = ""
+quantization = "nvfp4"
+
+[embedding."qwen3-embedding:0.6b"]
+query_prefix = "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:"
+document_prefix = ""
+source = "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/blob/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md"
+licence = "apache-2.0"
+
+[embedding."bge-m3:latest"]
+query_prefix = ""
+document_prefix = ""
+source = "https://huggingface.co/BAAI/bge-m3/blob/5617a9f61b028005a4858fdac845db406aefb181/README.md"
+licence = "mit"
+
+[embedding."embeddinggemma-2:270m"]
+query_prefix = "task: search result | query: "
+document_prefix = "title: none | text: "
+source = "https://huggingface.co/google/embeddinggemma-2/blob/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md"
+licence = "apache-2.0"
+
+[huggingface."BAAI/bge-reranker-v2-m3"]
+revision = "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+licence = "apache-2.0"
+tree_sha256 = "ff1a4b5762b6027b8a5fc2f9ee807d49f599667ee450620bf604288af92da823"
+
+[huggingface."cross-encoder/mmarco-mMiniLMv2-L12-H384-v1"]
+revision = "1427fd652930e4ba29e8149678df786c240d8825"
+licence = "apache-2.0"
+tree_sha256 = "a65134a5ed389e86e836ea8d646dd8ae9ce530d60d51b38032df83af7053b866"
+
+[huggingface."vectara/hallucination_evaluation_model"]
+revision = "de9a5e6ba9ba49531a022dba17e35ffeb2a6fad8"
+licence = "apache-2.0"
+tree_sha256 = "2a9a7db595774190703ab4b53ec16d8096659e5d9ae5202ff54a7f0c933ebbbb"
+
+[huggingface."google/flan-t5-base"]
+revision = "7bcac572ce56db69c1ea7c8af255c5d7c9672fc2"
+licence = "apache-2.0"
+tree_sha256 = "0d6c44c3394995e6e90d6cd3ba12c5051abe72b4049407a244471374196a9848"
+
+[docling."HuggingFaceTB--SmolVLM-256M-Instruct"]
+path = "~/.cache/docling/models/HuggingFaceTB--SmolVLM-256M-Instruct"
+tree_sha256 = "f3693e2518f28ef2210402fbd5ff08af30b67e6b5775a8adcca124272e848164"
+
+[docling."docling-project--DocumentFigureClassifier-v2.5"]
+path = "~/.cache/docling/models/docling-project--DocumentFigureClassifier-v2.5"
+tree_sha256 = "1ab35dba44f62f22c99d2773987495fabf56f02942a2205d99e2cb333f884a60"
+
+[docling."docling-project--docling-layout-heron"]
+path = "~/.cache/docling/models/docling-project--docling-layout-heron"
+tree_sha256 = "8c40c099541006e024a49dbaf05627ae8227b6a548cec8e3aff1e9c6fa8d4aa4"
+
+[docling."docling-project--docling-layout-heron-onnx"]
+path = "~/.cache/docling/models/docling-project--docling-layout-heron-onnx"
+tree_sha256 = "4b38c7908252a3957e36484157f22313bd070e0af7ec360c0a3f0ca5d5aca1e7"
+
+[docling."docling-project--docling-models"]
+path = "~/.cache/docling/models/docling-project--docling-models"
+tree_sha256 = "e642bfe5dfb0632a35527d56df67fb4805bd6399bb3877072c817304d9c62061"
+
+[docling."ibm-granite--granite-vision-4.1-4b"]
+path = "~/.cache/docling/models/ibm-granite--granite-vision-4.1-4b"
+tree_sha256 = "6520c0881e58cfa44890d57be73a2274373e842d9dea0fdf845bad75785f93c0"
+
+[tiktoken]
+cache_dir = "~/.cache/tiktoken"
+
+[tiktoken.files.o200k_base]
+file = "fb374d419588a4632f3f557e76b4b70aebbca790"
+sha256 = "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d"
+
+[tiktoken.files.cl100k_base]
+file = "9b5ad71b2ce5302211f9c61530b329a4922fc6a4"
+sha256 = "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7"

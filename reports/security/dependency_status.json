@@ -1,0 +1,22 @@
+[
+ {
+  "id": "PYSEC-2026-2447",
+  "package": "diskcache",
+  "version": "5.6.3",
+  "fix_versions": [],
+  "severity": "HIGH",
+  "severity_source": "https://api.osv.dev/v1/vulns/PYSEC-2026-2447",
+  "retrieved": "2026-10-24",
+  "status": "accepted_exception"
+ },
+ {
+  "id": "PYSEC-2026-3046",
+  "package": "ragas",
+  "version": "0.4.3",
+  "fix_versions": [],
+  "severity": "HIGH",
+  "severity_source": "https://api.osv.dev/v1/vulns/PYSEC-2026-3046",
+  "retrieved": "2026-10-24",
+  "status": "accepted_exception"
+ }
+]

@@ -1,0 +1,162 @@
+# Well-known companies (T11.AC3). The fictional client names must not contain any of these.
+# A sample of large companies from the UK, Spain, Sweden, the US and elsewhere, plus large
+# logistics, dental, hotel, food, motor and veterinary groups that match the clients' sectors.
+Apple
+Microsoft
+Alphabet
+Google
+Amazon
+Meta
+Nvidia
+Tesla
+Berkshire Hathaway
+JPMorgan Chase
+Visa
+Mastercard
+Walmart
+Procter & Gamble
+Johnson & Johnson
+ExxonMobil
+Chevron
+Coca-Cola
+PepsiCo
+McDonald's
+Nike
+Disney
+Netflix
+Intel
+IBM
+Oracle
+Salesforce
+Adobe
+Cisco
+Pfizer
+Merck
+AbbVie
+UnitedHealth
+Boeing
+General Electric
+Siemens
+SAP
+Volkswagen
+BMW
+Mercedes-Benz
+Stellantis
+Renault
+Toyota
+Honda
+Nissan
+Hyundai
+Samsung
+Sony
+Panasonic
+Nestlé
+Unilever
+Danone
+L'Oréal
+LVMH
+Shell
+BP
+TotalEnergies
+HSBC
+Barclays
+Lloyds
+NatWest
+Santander
+BBVA
+CaixaBank
+Bankinter
+Sabadell
+Telefónica
+Iberdrola
+Repsol
+Endesa
+Naturgy
+Inditex
+Zara
+Mercadona
+El Corte Inglés
+Ferrovial
+ACS
+Acciona
+Mapfre
+Grifols
+Aena
+Amadeus
+Meliá
+NH Hotels
+Barceló
+Iberia
+IAG
+Vueling
+Calvo
+Conservas Ortiz
+Jealsa
+Pescanova
+Ebro Foods
+Talgo
+CAF
+Seat
+Cupra
+Volvo
+Ericsson
+H&M
+IKEA
+Spotify
+Klarna
+Atlas Copco
+Sandvik
+Scania
+Saab
+Electrolux
+Tesco
+Sainsbury's
+Marks & Spencer
+Unilever
+AstraZeneca
+GSK
+Rolls-Royce
+BAE Systems
+Vodafone
+BT Group
+Diageo
+Rio Tinto
+Glencore
+DHL
+UPS
+FedEx
+Maersk
+DSV
+Kuehne+Nagel
+Royal Mail
+Eddie Stobart
+Wincanton
+GXO
+XPO
+Bupa
+mydentist
+Portman Dental Care
+Dentsply Sirona
+Straumann
+Hilton
+Marriott
+Hyatt
+Accor
+IHG
+Premier Inn
+Whitbread
+Travelodge
+Wyndham
+Kia
+Ford
+Midas
+Norauto
+Kwik Fit
+Halfords
+Euromaster
+IVC Evidensia
+VetPartners
+Mars
+AniCura
+Kiwoko
+Tiendanimal

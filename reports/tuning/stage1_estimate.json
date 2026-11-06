@@ -1,0 +1,9 @@
+{
+ "models": [
+  "qwen3-embedding:0.6b",
+  "embeddinggemma-2:270m"
+ ],
+ "hours": 0.39,
+ "limit_hours": 8.0,
+ "keep_embeddinggemma": true
+}

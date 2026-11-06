@@ -1,0 +1,5 @@
+# Written by scripts/setup_drive_tree.py (T10). The Drive root is a real
+# resource: tests may use it only through the allowlist.
+[root]
+path = '/Users/YOU/Library/CloudStorage/GoogleDrive-YOU@example.com/My Drive/Company Brain'
+folder_id = 'YOUR_DRIVE_FOLDER_ID'

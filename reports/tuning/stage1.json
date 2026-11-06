@@ -1,0 +1,111 @@
+{
+ "stage": "stage1",
+ "run_id": "20261025-194943-stage1",
+ "results": [
+  {
+   "config": {
+    "embedding": "qwen3-embedding:0.6b",
+    "budget": 500,
+    "reranker": "on"
+   },
+   "recall@5": 1.0,
+   "mrr": 0.9666666666666667,
+   "seconds": 0.522,
+   "by_language": {
+    "en": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.5906846694648266
+    },
+    "es": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.45316844986906896
+    },
+    "all": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.5219265596669478
+    }
+   },
+   "counts": {
+    "en": 15,
+    "es": 15,
+    "all": 30
+   }
+  },
+  {
+   "config": {
+    "embedding": "bge-m3:latest",
+    "budget": 500,
+    "reranker": "on"
+   },
+   "recall@5": 1.0,
+   "mrr": 0.9666666666666667,
+   "seconds": 0.31,
+   "by_language": {
+    "en": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.3539124693333482
+    },
+    "es": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.2651290165958926
+    },
+    "all": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.3095207429646204
+    }
+   },
+   "counts": {
+    "en": 15,
+    "es": 15,
+    "all": 30
+   }
+  },
+  {
+   "config": {
+    "embedding": "embeddinggemma-2:270m",
+    "budget": 500,
+    "reranker": "on"
+   },
+   "recall@5": 1.0,
+   "mrr": 0.9666666666666667,
+   "seconds": 0.242,
+   "by_language": {
+    "en": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.2332102222600952
+    },
+    "es": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.25035502496175466
+    },
+    "all": {
+     "recall@5": 1.0,
+     "mrr": 0.9666666666666667,
+     "seconds": 0.24178262361092492
+    }
+   },
+   "counts": {
+    "en": 15,
+    "es": 15,
+    "all": 30
+   }
+  }
+ ],
+ "winner": {
+  "embedding": "embeddinggemma-2:270m",
+  "budget": 500,
+  "reranker": "on"
+ },
+ "seal_log_lines": [
+  1,
+  1
+ ]
+}

@@ -1,0 +1,65 @@
+# Python and tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+dist/
+build/
+
+# Secrets and local settings
+.env
+.env.*
+*.pem
+*.key
+
+# System data, models, backups and exports (never in git)
+/data/*
+!/data/manifests/
+!/data/facts.json
+CompanyBrainData/
+CompanyBrainExports/
+models/
+*.gguf
+*.safetensors
+backups/
+Company Brain Backups/
+exports/
+
+# Database dumps and archives
+*.dump
+*.sql.gz
+*.pgdump
+*.sqlite
+*.sqlite3
+*.db
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.age
+*.bundle
+
+# Locked questions are never committed (T14, T14S)
+eval/review/
+
+# Generated reports that may hold model output
+reports/runs/
+
+# macOS
+.DS_Store
+
+# Open WebUI writes its session key where it starts; it belongs in the data folder
+.webui_secret_key
+
+# T34D: rebuilt from the result files, never committed
+reports/dashboard.html
+reports/dashboard_out_of_date.html
+reports/dashboard_build.json
+.secret_scan_findings.json
+
+# T36 rating pack: the key unblinds the answers; never committed
+reports/rating/

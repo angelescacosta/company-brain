@@ -1,0 +1,18 @@
+# T46.AC2: accepted exceptions for vulnerabilities with no fixed version.
+# Each needs id, severity, source, exposure, owner and expires (at the latest, the go-live PRD).
+
+[[exception]]
+id = "PYSEC-2026-2447"  # CVE-2025-69872, GHSA-w8v5-vhqr-4h9v; diskcache 5.6.3
+severity = "HIGH"
+source = "OSV https://api.osv.dev/v1/vulns/PYSEC-2026-2447 (retrieved 2026-10-24)"
+exposure = "diskcache is only a dependency of ragas, used by the offline evaluation; this system never configures a ragas cache, so no cache directory is read. The attack needs write access to a cache directory on this Mac, which already means code running as the owner. Not reachable from the chat window or the documents."
+owner = "Claude for the project owner; re-checked by T45 and at go-live"
+expires = "2026-11-30"  # at the latest, the go-live PRD
+
+[[exception]]
+id = "PYSEC-2026-3046"  # CVE-2026-6587, GHSA-95ww-475f-pr4f; ragas 0.4.3
+severity = "HIGH"
+source = "OSV https://api.osv.dev/v1/vulns/PYSEC-2026-3046 (retrieved 2026-10-24)"
+exposure = "The flaw is in ragas' multi-modal faithfulness helpers (_try_process_local_file, _try_process_url). This system uses only Faithfulness and ResponseRelevancy (src/company_brain/eval_run.py:457), in the offline evaluation on fictional and public documents; LuLu blocks the AI Python from the internet. Not reachable from the chat window."
+owner = "Claude for the project owner; re-checked by T45 and at go-live"
+expires = "2026-11-30"  # at the latest, the go-live PRD

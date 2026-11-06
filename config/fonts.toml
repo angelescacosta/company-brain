@@ -1,0 +1,31 @@
+# Fonts used to render test documents (T11, T11R). Open licences only; each one
+# gets a row in LICENCES.md (T12). Checked by tests/test_corpus.py.
+
+[[font]]
+file = "assets/fonts/DejaVuSans.ttf"
+name = "DejaVu Sans"
+version = "2.37"
+licence = "Bitstream Vera Fonts licence with DejaVu changes in the public domain (assets/fonts/DejaVuSans-LICENSE.txt)"
+source = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+sha256 = "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954"
+used_by = ["T11"]
+
+[[font]]
+file = "assets/fonts/DejaVuSansMono.ttf"
+name = "DejaVu Sans Mono"
+version = "2.37"
+licence = "Bitstream Vera Fonts licence with DejaVu changes in the public domain (assets/fonts/DejaVuSans-LICENSE.txt)"
+source = "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.tar.bz2"
+archive_sha256 = "fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7"
+sha256 = "b4a6c3e4faab8773f4ff761d56451646409f29abedd68f05d38c2df667d3c582"
+used_by = ["T11R"]
+
+[[font]]
+file = "assets/fonts/PatrickHand-Regular.ttf"
+name = "Patrick Hand"
+version = "1.003"
+licence = "SIL Open Font License 1.1 (assets/fonts/PatrickHand-OFL.txt)"
+source = "https://raw.githubusercontent.com/google/fonts/90abd17b4f97671435798b6147b698aa9087612f/ofl/patrickhand/PatrickHand-Regular.ttf"
+sha256 = "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc"
+used_by = ["T11R"]
